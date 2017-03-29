@@ -1,0 +1,29 @@
+
+public class Salesman extends Employee {
+	private int annualSales;
+	private int annualSalary;
+	private int commision;
+	
+	public Salesman (String name, int monthlysalary, int annualSales) {
+		super(name, monthlysalary);
+		this.annualSales = annualSales;
+	}
+	
+	public int annualSalary(int salary){
+		annualSalary = super.annualSalary();
+		if((annualSales*0.02)<=20000){
+			commision = (int) (annualSales*0.02);
+		}else{
+			commision = 20000;
+		}
+		this.annualSalary = super.annualSalary() + commision;
+		return annualSalary;
+		
+	}
+
+	public String toString(){
+		return super.toString() + "\nAnnual Sales: " + annualSales;
+	}
+}
+
+
