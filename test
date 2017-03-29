@@ -1,0 +1,26 @@
+/**
+ * 
+ */
+
+/**25Mar17
+ * Jose Escanodr
+ * Purpose:Create a program that demonstrates superclass and subclass.
+ */
+import java.io.*;
+import java.util.*;
+import java.util.Scanner;
+
+public class test{
+	
+public static void main(String[] args){
+
+        Employee d1 = new Employee("d",2000);
+        Salesman d2 = new Salesman("r",3000,1000000);
+        Executive d3 = new Executive("t",5000,60);
+        
+        System.out.println(d1);
+        System.out.println(d2);
+        System.out.println(d3);
+    }
+}
+
