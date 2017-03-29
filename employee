@@ -1,0 +1,20 @@
+
+public class Employee {
+	
+    private String name;
+    private int monthlysalary;
+	private int annualSalary;
+	
+	public Employee (String name, int monthlysalary) {
+    this.name = name;
+    this.monthlysalary = monthlysalary;
+	}
+	
+	public int annualSalary (){
+		return this.annualSalary = 12*monthlysalary;
+	}
+	
+	public String toString(){
+		return "Name: " + name + "\nMonthly Salary: " + monthlysalary;
+	}
+}
