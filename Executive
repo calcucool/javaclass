@@ -1,0 +1,28 @@
+
+public class Executive extends Employee {
+	
+	private int stockPrice;
+	private int annualSalary;
+	private int bonus;
+	
+	
+	public Executive (String name, int monthlysalary, int stockPrice) {
+		super(name, monthlysalary);
+		this.stockPrice = stockPrice;
+	}
+	public int annualSalary(){
+		if(stockPrice>55){
+			bonus = 30000;
+		}else{
+			bonus = 0;
+		}
+		this.annualSalary = super.annualSalary()+(bonus);
+		return annualSalary;
+	}
+	
+	public String toString(){
+		return super.toString() + "\nStock Price: " + stockPrice + "\nAnnualsalary" + annualSalary();
+	}
+
+}
+
